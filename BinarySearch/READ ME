@@ -1,0 +1,15 @@
+READ ME
+Binary Search Implementation by Cassie Kresnye
+
+This program first recusively sorts a hardcoded integer list, then prompts the user repeatively to input a value to find. Once a value is inputed, a recursive binary search implementation is used to locate the address. The output is formatted and then displayed in an easy to read manner.
+
+To exit the user input loop, simply type in 0.
+
+NOTES ON THE PROJECT
+As far as I know this works. I have tested it with lists of up to 60 values, with both positive and negative integers, as well as repeated values. As long as the length of the list is changed when values are added to the list, it will work. 
+
+For this project, I found the hardest part was the quicksort. The binary search part was pretty straightforward once I got back into the hang of writing in MIPS. I do wish I could rewrite it such that it utilizes more T registers than S to save stack space and time. But other than that it works, even if a bit slow.
+
+The quicksort was a bothersome issue. I wrote it 3 different time and finally settled on the correct way to write the function the day before it was due. The first way I tried to write it I was terribly wrong with getting the addressing right and it was basically a hot mess. The second time, I attempted to make a second array to actually manipulate and then copy the values back into the original, but the run time was terrible, and there were issues with where to place the temp array in memory. Finally, I settled on the current implementation when I was tired of my temp array overwritting the real array. I wrote it such that the array is sorted through swapping, and a little bit of magic with shifting it around so that the swapping will always work. It could be much more efficent (since it still takes quite a bit of time comparing to other searches I could have done) but I did learn quite a bit about manipulating the lists correctly and I'm really happy I didn't give up and just accept my first version of the quicksort.
+
+Enjoy!
